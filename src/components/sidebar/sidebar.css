@@ -1,0 +1,53 @@
+.sidebar {
+    background-color: white;
+    width: 5%;
+    height: 100vh;
+}
+
+.top_section {
+    display: flex;
+    margin: 1.5em auto 3em auto;
+}
+
+.logo {}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItemsTop,
+.menuItemsMiddle,
+.menuItemsBottom {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.link:hover {
+    background-color: #ebf2ec;
+    transition: all 0.3s;
+}
+
+.icon {
+    color: #8f8f8f;
+    margin: 0 auto;
+}
+
+.greenBar {
+    width: .25em;
+    height: 100%;
+    background-color: green;
+}
+
+.active {
+    background-color: #ebf2ec;
+}
