@@ -1,15 +1,19 @@
 .sidebar {
     background-color: white;
-    width: 5%;
+    width: 70px;
     height: 100vh;
+    box-shadow: 6px 0px 10px -1px rgba(0, 0, 0, 0.21);
+    margin-right: 3.5em;
 }
 
 .top_section {
     display: flex;
-    margin: 1.5em auto 3em auto;
+    margin: 1.5em 0 3em 0;
 }
 
-.logo {}
+.logo {
+    margin: auto;
+}
 
 .menuItems {
     display: flex;
@@ -17,9 +21,13 @@
 }
 
 .menuItemsTop,
-.menuItemsMiddle,
-.menuItemsBottom {
+.menuItemsMiddle {
     margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItemsBottom {
     display: flex;
     flex-direction: column;
 }
@@ -50,4 +58,23 @@
 
 .active {
     background-color: #ebf2ec;
+}
+
+/* Small Screen */
+@media (max-width: 769px) {
+    .sidebar {
+        margin-right: 1em;
+    }
+
+    .menuItemsTop,
+    .menuItemsMiddle {
+        margin-bottom: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .icon {
+        max-width: 20px;
+    }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
-
+import "./perusahaan.css"
 export const Perusahaan = () => {
     return (
-        <div>Perusahaan</div>
+        <p>perusahaan</p>
     )
 }

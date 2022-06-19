@@ -3,7 +3,12 @@
     background-color: #f4faf5;
 }
 
+.container_content {
+    margin-top: 2.5em;
+    padding-right: 2.5em;
+    /* margin-left: 3em; */
+}
+
 main {
     width: 100%;
-    padding: 50px;
 }

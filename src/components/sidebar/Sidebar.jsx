@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import "./sidebar.css";
+import { Topbar } from '../topbar/Topbar';
 
 // Import Icons
 import { IconContext } from 'react-icons';
@@ -19,6 +20,7 @@ import { HiOutlineArchive } from "react-icons/hi";
 import { FiLayers } from "react-icons/fi";
 import { SiHackthebox } from "react-icons/si";
 import { RiPhoneCameraLine } from "react-icons/ri";
+
 
 export const Sidebar = ({ children }) => {
     const menuItemTop = [
@@ -90,7 +92,6 @@ export const Sidebar = ({ children }) => {
     }];
     const location = useLocation();
     const { pathname } = location;
-    console.log(menuItems[0].data[1].path);
     return (
         <div className="container">
             <div className="sidebar">
@@ -112,7 +113,12 @@ export const Sidebar = ({ children }) => {
                     </div>
                 </IconContext.Provider>
             </div>
-            <main>{children}</main>
+            <main>
+                <Topbar />
+                <div className="container_content">
+                    {children}
+                </div>
+            </main>
         </div>
     )
 }
