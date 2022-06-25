@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import "./sidebar.css";
 import { Topbar } from '../topbar/Topbar';
 
+
 // Import Icons
 import { IconContext } from 'react-icons';
 import {
@@ -27,57 +28,57 @@ export const Sidebar = ({ children }) => {
         {
             path: "/",
             name: "Dashboard",
-            icon: <RiHome8Line />
+            icon: <RiHome8Line className='sidebar_icon' />
         },
         {
             path: "/tiket",
             name: "Tiket",
-            icon: <TbTicket />
+            icon: <TbTicket className='sidebar_icon' />
         },
         {
             path: "/task",
             name: "Task",
-            icon: <BiTask />
+            icon: <BiTask className='sidebar_icon' />
         },
         {
             path: "/archive",
             name: "Archive",
-            icon: <HiOutlineArchive />
+            icon: <HiOutlineArchive className='sidebar_icon' />
         },
         {
             path: "/perusahaan",
             name: "Perusahaan",
-            icon: <TbBuildingSkyscraper />
+            icon: <TbBuildingSkyscraper className='sidebar_icon' />
         }
     ]
     const menuItemMiddle = [
         {
             path: "/user",
             name: "User",
-            icon: <TbUsers />
+            icon: <TbUsers className='sidebar_icon' />
         }, {
             path: "/layer",
             name: "Layer",
-            icon: <FiLayers />
+            icon: <FiLayers className='sidebar_icon' />
         }, {
             path: "/box",
             name: "Box",
-            icon: <SiHackthebox />
+            icon: <SiHackthebox className='sidebar_icon' />
         }, {
             path: "/someShape",
             name: "SomeShape",
-            icon: <TbDrone />
+            icon: <TbDrone className='sidebar_icon' />
         }, {
             path: "/analysis",
             name: "Analysis",
-            icon: <TbZoomMoney />
+            icon: <TbZoomMoney className='sidebar_icon' />
         }
     ]
     const menuItemBottom = [
         {
             path: "/idk",
             name: "idk",
-            icon: <RiPhoneCameraLine />
+            icon: <RiPhoneCameraLine className='sidebar_icon' />
         }
     ]
     const menuItems = [{
@@ -96,22 +97,25 @@ export const Sidebar = ({ children }) => {
         <div className="container">
             <div className="sidebar">
                 <div className="top_section">
-                    <p className='logo'>logo</p>
+                    <a className='logo' href='https://pngtree.com/so/Health'>
+                        <img src="/images/logo.png" alt="" />
+                    </a>
                 </div>
-                <IconContext.Provider value={{ size: "1.2em" }}>
-                    <div className="menuItems">
-                        {menuItems.map((menuItem, index) => (
-                            <div className={menuItem.className} key={index}>
-                                {menuItem.data.map((item, i) => (
-                                    <NavLink to={item.path} key={i} className="link" activeclassName="active">
-                                        {(pathname === item.path) ? <span className='greenBar'></span> : <span></span>}
-                                        <div className="icon">{item.icon}</div>
-                                    </NavLink>
-                                ))}
-                            </div>
-                        ))}
-                    </div>
-                </IconContext.Provider>
+
+                <div className="menuItems">
+                    {menuItems.map((menuItem, index) => (
+                        <div className={menuItem.className} key={index}>
+                            {menuItem.data.map((item, i) => (
+                                <NavLink to={item.path} key={i} className="link" activeclassName="active">
+                                    {(pathname === item.path) ? <span className='barGreen'></span> : <span className="bar"></span>}
+                                    {item.icon}
+                                </NavLink>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+
+
             </div>
             <main>
                 <Topbar />

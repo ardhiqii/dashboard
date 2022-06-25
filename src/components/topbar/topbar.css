@@ -18,7 +18,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 280px;
 }
 
 .title {
@@ -27,15 +26,18 @@
 
 .topRight {
     display: flex;
-    width: 250px;
+    width: 200px;
     justify-content: space-between;
     align-items: center;
 }
 
 .topRight_left {
     display: flex;
-    width: 55px;
     justify-content: space-between;
+}
+
+.icon {
+    margin-right: 1em;
 }
 
 .search {
@@ -50,8 +52,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: red; */
-    width: 110px;
+}
+
+.profile .gambar {
+    margin-right: 1em;
 }
 
 .gambar img {
@@ -63,48 +67,44 @@
     padding-bottom: .4em;
 }
 
-/* Small Screen */
-@media (max-width: 769px) {
+/* Ipads, Tables */
+@media (max-width:768px) {
     .topLeft {
-        max-width: 250px;
-    }
-
-    .topLeft h4 {
-        font-size: .9rem;
+        width: 250px;
     }
 
     .topRight {
-        max-width: 180px;
-    }
-
-    .topRight .namaUser {
-        font-size: .9rem;
-    }
-}
-
-/* Mobile */
-@media (max-width:480px) {
-    .topLeft {
-        max-width: 180px;
-    }
-
-    .topLeft h4 {
-        font-size: .7rem;
-    }
-
-    .topRight {
-        max-width: 40vw;
-    }
-
-    .profile {
-        max-width: 90px;
-    }
-
-    .topRight .namaUser {
-        font-size: .8rem;
+        max-width: 30vw;
     }
 
     .icon {
-        max-width: 15px;
+        margin-right: 1em;
+    }
+
+    .profile .gambar {
+        margin-right: 1em;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width:480px) {
+    .topLeft {
+        width: 180px;
+    }
+
+    .topLeft h4 {
+        font-size: .8rem;
+    }
+
+    .topRight {
+        width: 23vw;
+    }
+
+    .namaUser p {
+        display: none;
+    }
+
+    .icon {
+        margin-right: 1em;
     }
 }

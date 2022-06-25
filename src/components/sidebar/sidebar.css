@@ -1,18 +1,19 @@
 .sidebar {
     background-color: white;
-    width: 70px;
     height: 100vh;
+    max-width: 80px;
     box-shadow: 6px 0px 10px -1px rgba(0, 0, 0, 0.21);
     margin-right: 3.5em;
 }
 
 .top_section {
     display: flex;
-    margin: 1.5em 0 3em 0;
+    margin: 1.5em 0 .5em 0;
 }
 
-.logo {
+.logo img {
     margin: auto;
+    width: 100%;
 }
 
 .menuItems {
@@ -45,36 +46,46 @@
     transition: all 0.3s;
 }
 
-.icon {
+.sidebar_icon {
+    width: 100px;
     color: #8f8f8f;
     margin: 0 auto;
 }
 
-.greenBar {
-    width: .25em;
-    height: 100%;
+
+.barGreen {
     background-color: green;
+    width: 8px;
+    height: 100%;
+}
+
+.bar {
+    width: 8px;
+    height: 100%;
 }
 
 .active {
     background-color: #ebf2ec;
 }
 
-/* Small Screen */
-@media (max-width: 769px) {
+/* Ipads, Tables */
+@media (max-width:768px) {
     .sidebar {
+        max-width: 50px;
         margin-right: 1em;
     }
 
     .menuItemsTop,
     .menuItemsMiddle {
         margin-bottom: 2vh;
-        display: flex;
-        flex-direction: column;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width:480px) {
+
+    .link {
+        height: 6.5vh;
     }
 
-
-    .icon {
-        max-width: 20px;
-    }
 }

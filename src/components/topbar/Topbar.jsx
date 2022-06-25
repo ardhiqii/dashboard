@@ -6,14 +6,13 @@ import { AiOutlineSearch } from "react-icons/ai"
 import { IoMdNotificationsOutline } from "react-icons/io"
 import { IconContext } from 'react-icons';
 export const Topbar = () => {
-    const namaPerusahaan = "Mitramas Infosys Global"
+    const namaPerusahaan = "Nama Perusahaan"
     const namaUser = "John Doe"
     const photo = "https://www.w3schools.com/howto/img_avatar.png"
     return (
         <div className='topbar'>
             <div className="topbarWrapper">
                 <div className="topLeft">
-
                     <h4 className='title'>Perusahaan</h4>
                     <BiChevronRight size={20} color={"#dadcda"} className="arrow" />
                     <h4>{namaPerusahaan}</h4>
