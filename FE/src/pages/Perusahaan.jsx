@@ -67,6 +67,7 @@ export const Perusahaan = () => {
         fetchData()
     }, [addNewCard])
     console.log(relasi);
+    console.log(dataUserCard);
     return (
         <div className="container_perusahaan">
             <div className="profile_perusahaan">

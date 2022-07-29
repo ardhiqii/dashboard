@@ -40,19 +40,19 @@ export const AddNewCard = ({ closed, tmp, added, addNewCard }) => {
                 <span className="close" onClick={() => { closed(!tmp) }}>X</span>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="nama">Nama:</label>
-                    <input type="text" id="nama" value={nama} onChange={(e) => setNama(e.target.value)} required />
+                    <input type="text" id="nama" value={nama} onChange={(e) => setNama(e.target.value)} required autoComplete="off" />
 
                     <label htmlFor="namaBank">Nama Bank:</label>
                     <input type="text" id="namaBank" value={namaBank}
-                        onChange={(e) => setNamaBank(e.target.value)} required />
+                        onChange={(e) => setNamaBank(e.target.value)} required autoComplete="off" />
 
                     <label htmlFor="lokasi">Lokasi:</label>
                     <input type="text" id="lokasi" value={lokasi}
-                        onChange={(e) => setLokasi(e.target.value)} required />
+                        onChange={(e) => setLokasi(e.target.value)} required autoComplete="off" />
 
                     <label htmlFor="nomorBank">Nomor Bank:</label>
                     <input className="nomorBank" type="number" id="nomorBank" value={nomorBank}
-                        onChange={(e) => setNomorBank(e.target.value)} required />
+                        onChange={(e) => setNomorBank(e.target.value)} required autoComplete="off" />
 
                     <label htmlFor="currency">Currency:</label>
                     <select name="currency" id="currency" value={currency} onChange={(e) => setCurrency(e.target.value)}>

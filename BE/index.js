@@ -26,12 +26,27 @@ app.post("/post", async (req, res, next) => {
                 currency
             }
         })
-        console.log(posted);
+        res.status(201)
     } catch (e) {
         console.log(e);
     }
 
     res.send("berhasil")
+})
+app.delete("/delete", async (req, res, next) => {
+    const { id } = req.body
+
+    try {
+        const deleted = await prisma.userCard.delete({
+            where: {
+                id
+            }
+        })
+    } catch (e) {
+        console.log(e);
+    }
+
+    res.status(202)
 })
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
