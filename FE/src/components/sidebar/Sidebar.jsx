@@ -106,7 +106,7 @@ export const Sidebar = ({ children }) => {
                     {menuItems.map((menuItem, index) => (
                         <div className={menuItem.className} key={index}>
                             {menuItem.data.map((item, i) => (
-                                <NavLink to={item.path} key={i} className="link" activeclassName="active">
+                                <NavLink to={item.path} key={i} className="link" activeclassname="active">
                                     {(pathname === item.path) ? <span className='barGreen'></span> : <span className="bar"></span>}
                                     {item.icon}
                                 </NavLink>

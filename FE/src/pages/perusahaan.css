@@ -1,0 +1,339 @@
+.container_perusahaan {
+    height: 85vh;
+    display: flex;
+    width: 95%;
+}
+
+/* Ipads, Tables */
+
+@media (max-width:768px) {
+    .container_perusahaan {
+        flex-direction: column;
+    }
+}
+
+.container_profile {
+    position: relative;
+    bottom: 3.5em;
+}
+
+.profile_perusahaan {
+    box-shadow: 6px 0px 10px -1px rgba(0, 0, 0, 0.21);
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    max-width: 250px;
+    margin-right: 1em;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8em;
+}
+
+.box .greenText {
+    color: #34753a;
+}
+
+.box a {
+    color: #34753a;
+    text-decoration: none;
+    font-size: .75rem;
+}
+
+
+
+.backgroundProfile {
+    object-fit: cover;
+    width: 100%;
+    height: 10vh;
+}
+
+.logoPerusahaan {
+    background-color: white;
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #d3e1d5;
+    margin-bottom: 1em;
+}
+
+.logoPerusahaan img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.topProfile {
+    margin-bottom: 1em;
+}
+
+.topProfile .keterangan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.topProfile .keterangan h2 {
+    font-size: 1.3rem;
+    color: #515151;
+    margin-bottom: .3em;
+}
+
+.topProfile .keterangan span {
+    font-size: .75rem;
+    color: #a5a5a5;
+}
+
+/* Sunting Profile */
+.editProfile {
+    margin: 0 auto;
+    width: 105px;
+}
+
+.editProfile button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #34753a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Toggle Switch */
+.toggleAktif {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.detailProfile {
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+.detailProfile span {
+    color: #c5c5c5;
+    font-size: .7rem;
+    margin-bottom: .5em;
+}
+
+.detailProfile p {
+    color: #737373;
+    font-size: .8rem;
+}
+
+/* Ipads, Tables */
+
+@media (max-width:768px) {
+    .profile_perusahaan {
+        width: 65vw;
+        margin: 0 auto;
+        height: 641px;
+    }
+}
+
+.container_right {
+    width: 80%;
+}
+
+/* Ipads, Tables */
+
+@media (max-width:768px) {
+    .container_right {
+        margin: 1em auto;
+    }
+}
+
+/* Lokasi */
+.container_lokasi {
+    background-color: white;
+    box-shadow: 6px 0px 10px -1px rgba(0, 0, 0, 0.21);
+    border-radius: 10px;
+    padding: 1.5em 1em;
+    margin-bottom: 2em;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.upper h2 {
+    color: #515151;
+    font-size: 1rem;
+}
+
+.upper span {
+    color: #34753a;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.container_lokasi .under {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.greenBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    background-color: #34753a;
+    border-radius: 10px;
+    padding: .5em;
+}
+
+.greenBox:nth-child(2) {
+    background-color: #50b058;
+}
+
+.greenBox:nth-child(3) {
+    background-color: #6dbd74;
+}
+
+.greenBox .detail {
+    text-align: right;
+    color: white;
+}
+
+.greenBox .detail p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.greenBox .detail span {
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+
+.container_white {
+    background-color: white;
+    box-shadow: 6px 0px 10px -1px rgba(0, 0, 0, 0.21);
+    border-radius: 10px;
+    padding: 1.5em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Middle */
+.container_middle {
+    display: flex;
+    height: calc(100% - 195px);
+}
+
+@media (max-width:768px) {
+    .container_middle {
+        flex-direction: column;
+    }
+}
+
+/* Middle Left */
+.container_middle_left {
+    width: 450px;
+    margin-right: 1em;
+    height: 100%;
+}
+
+
+.container_white.akun_bank {
+    width: 100%;
+    height: calc(45%);
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+
+.container_white.akun_bank button {
+    border: none;
+    background-color: #35763b;
+    padding: .5em 2em;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.cardList {
+    overflow: auto;
+    height: 100%;
+}
+
+
+.cardList::-webkit-scrollbar {
+    width: 5px;
+}
+
+.cardList::-webkit-scrollbar-thumb {
+    background-color: #b3e8b7;
+    border-radius: 5px;
+}
+
+.cardList .card {
+    margin-bottom: 1em;
+}
+
+.cardList .card:last-child {
+    margin-bottom: 0;
+}
+
+/* Relasi */
+.container_white.relasi {
+    width: 100%;
+    height: 50%;
+
+}
+
+.container_white.relasi .under .detail_relasi {
+    display: flex;
+    align-items: center;
+}
+
+.container_white.relasi .under .detail_relasi .icon {
+    font-size: 25px;
+}
+
+.container_white.relasi .under .detail_relasi p {
+    color: #515151;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container_white.relasi .under .detail_relasi span {
+    color: #a5a5a5;
+    font-size: .8rem;
+    margin-bottom: .5em;
+    display: inline-block;
+}
+
+.container_white.aktivitas {
+    width: 50%;
+}
+
+.container_white.aktivitas .detail_aktivitas {
+    margin-bottom: 1em;
+}
+
+.container_white.aktivitas .under p {
+    color: #515151;
+    margin-bottom: .5em;
+    font-size: 1rem;
+
+}
+
+.container_white.aktivitas .under span {
+    color: #a5a5a5;
+    font-size: .8rem;
+}

@@ -1,0 +1,60 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .colorCard {
+    background: rgb(127, 162, 11);
+    background: linear-gradient(310deg, rgba(127, 162, 11, 1) 11%, rgba(245, 219, 0, 1) 100%);
+    width: 35%;
+    height: 100px;
+    padding: 1em;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.card .colorCard h1 {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: calc(100% - 70px);
+}
+
+.card .detailCard {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.card .detailCard .upper span {
+    color: #515151;
+    font-size: 1rem;
+}
+
+.card .detailCard .upper .buttons {
+    display: flex;
+
+}
+
+.card .detailCard .upper .buttons button {
+    background-color: transparent;
+    color: black;
+    width: 50px;
+    padding: 0;
+}
+
+.card .detailCard .under {
+    display: flex;
+    flex-direction: column;
+    color: #c9c9c9;
+    justify-content: space-between;
+    font-size: .8rem;
+
+}
+
+.card .detailCard .under span:first-child {
+    margin-bottom: .5em;
+}
